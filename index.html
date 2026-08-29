@@ -4,100 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ирина Романова | Фасилитатор Access Consciousness Таллинн</title>
+    
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { color: #2D3142; line-height: 1.8; font-family: 'Plus Jakarta Sans', sans-serif; background-color: #FAF9F5; -webkit-font-smoothing: antialiased; }
-        header { background-color: #FFFFFF; padding: 90px 20px 60px; text-align: center; border-bottom: 1px solid #EFEFE9; }
+        
+        header { background-color: #FFFFFF; padding: 80px 20px 40px; text-align: center; border-bottom: 1px solid #EFEFE9; }
         .profile-container { margin-bottom: 25px; }
-        .profile-img { width: 145px; height: 145px; border-radius: 50%; object-fit: cover; border: 1px solid #D4AF37; padding: 5px; background-color: #FFF; }
-        header h1 { font-family: 'Playfair Display', serif; font-size: 2.6rem; color: #1A1C23; font-weight: 400; letter-spacing: 0.5px; margin-bottom: 10px; }
-        header p { font-size: 1.05rem; color: #8C8A80; font-weight: 300; max-width: 600px; margin: 0 auto; }
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 1px solid #D4AF37; padding: 5px; background-color: #FFF; }
+        header h1 { font-family: 'Playfair Display', serif; font-size: 2.8rem; color: #1A1C23; font-weight: 400; letter-spacing: 0.5px; margin-bottom: 10px; }
+        header .subtitle { font-size: 1.1rem; color: #8C8A80; font-weight: 300; max-width: 600px; margin: 0 auto 20px; }
+        
+        .header-contacts { font-size: 1.05rem; color: #1A1C23; font-weight: 500; margin-top: 15px; }
+        .header-contacts a { color: #D4AF37; text-decoration: none; margin: 0 10px; border-bottom: 1px dashed #D4AF37; }
+        
         .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
-        section { margin-bottom: 80px; }
-        h2 { font-family: 'Playfair Display', serif; font-size: 2rem; color: #1A1C23; margin-bottom: 35px; text-align: center; font-weight: 400; }
+        section { margin-bottom: 70px; }
+        
+        h2 { font-family: 'Playfair Display', serif; font-size: 2.1rem; color: #1A1C23; margin-bottom: 35px; text-align: center; font-weight: 400; }
         h2::after { content: ''; display: block; width: 35px; height: 1px; background-color: #D4AF37; margin: 15px auto 0; }
-        .announcement-card { background-color: #FFFFFF; border: 1px solid #EAE8E1; padding: 45px 35px; border-radius: 8px; text-align: center; box-shadow: 0 10px 30px rgba(26,28,35,0.02); position: relative; }
-        .announcement-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background-color: #D4AF37; border-radius: 8px 8px 0 0; }
-        .announcement-card h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: #1A1C23; margin-bottom: 15px; }
-        .event-details { font-size: 1.1rem; color: #2D3142; background: #FAF9F5; border-left: 3px solid #D4AF37; padding: 18px; border-radius: 4px; max-width: 500px; margin: 25px auto; text-align: left; }
-        .map-container { margin-top: 35px; border-radius: 6px; overflow: hidden; border: 1px solid #EAE8E1; }
-        .map-container iframe { width: 100%; height: 320px; border: 0; display: block; }
-        .text-block { background-color: #FFFFFF; border: 1px solid #EAE8E1; padding: 40px; border-radius: 6px; box-shadow: 0 4px 15px rgba(0,0,0,0.01); text-align: left; margin-bottom: 30px; }
+        
+        .text-block { background-color: #FFFFFF; border: 1px solid #EAE8E1; padding: 40px; border-radius: 8px; box-shadow: 0 10px 30px rgba(26,28,35,0.01); text-align: left; margin-bottom: 25px; }
         .text-block p { margin-bottom: 20px; color: #4A5568; }
         .text-block ul { margin: 20px 0 25px 20px; color: #4A5568; }
         .text-block li { margin-bottom: 10px; }
-        .price-table { width: 100%; border-collapse: collapse; background: #FFFFFF; border: 1px solid #EAE8E1; border-radius: 6px; overflow: hidden; }
-        .price-table th, .price-table td { padding: 18px 25px; text-align: left; }
-        .price-table th { background-color: #FAF9F5; color: #1A1C23; font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 400; border-bottom: 1px solid #EAE8E1; }
-        .price-table tr { border-bottom: 1px solid #FAF9F5; }
-        .price-table tr:last-child { border-bottom: none; }
-        .price-table td.price { text-align: right; font-weight: 600; color: #1A1C23; }
-        .btn { display: inline-block; background-color: #1A1C23; color: #FFFFFF; padding: 15px 40px; text-decoration: none; font-weight: 500; font-size: 0.95rem; letter-spacing: 0.5px; border-radius: 4px; margin-top: 15px; transition: all 0.3s; }
-        .btn:hover { background-color: #D4AF37; transform: translateY(-1px); }
-        .btn-secondary { display: inline-block; color: #D4AF37; text-decoration: none; font-weight: 500; font-size: 0.9rem; border-bottom: 1px solid rgba(212, 175, 55, 0.4); margin-top: 10px; }
-        .cta-box { text-align: center; background: #FFFFFF; padding: 50px 35px; border-radius: 8px; border: 1px solid #EAE8E1; }
+        .text-block h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: #1A1C23; margin-bottom: 15px; font-weight: 400; }
+        
+        .event-badge { display: inline-block; background: #FAF9F5; border-left: 3px solid #D4AF37; padding: 15px 20px; margin-bottom: 20px; border-radius: 0 4px 4px 0; width: 100%; font-size: 1.05rem; }
+        .price-tag { font-size: 1.3rem; color: #1A1C23; font-weight: 600; margin: 15px 0; padding: 10px 0; border-top: 1px solid #EAE8E1; border-bottom: 1px solid #EAE8E1; }
+        .price-tag span { color: #D4AF37; }
+        
+        .map-container { margin-top: 35px; border-radius: 6px; overflow: hidden; border: 1px solid #EAE8E1; }
+        .map-container iframe { width: 100%; height: 300px; border: 0; display: block; }
+        
+        .btn { display: inline-block; background-color: #1A1C23; color: #FFFFFF; padding: 15px 40px; text-decoration: none; font-weight: 500; font-size: 0.95rem; letter-spacing: 0.5px; border-radius: 4px; margin-top: 15px; transition: all 0.3s ease; text-transform: uppercase; }
+        .btn:hover { background-color: #D4AF37; transform: translateY(-1px); box-shadow: 0 5px 15px rgba(212,175,55,0.2); }
+        
+        .cta-box { text-align: center; background: #FFFFFF; padding: 50px 35px; border-radius: 8px; border: 1px solid #EAE8E1; box-shadow: 0 4px 15px rgba(0,0,0,0.02); }
         .phone-display { font-family: 'Playfair Display', serif; font-size: 2rem; margin: 20px 0 5px; color: #1A1C23; }
-        .instagram-display { font-size: 1rem; margin-bottom: 25px; color: #8C8A80; }
-        .instagram-display a { color: #1A1C23; text-decoration: none; font-weight: 500; }
-        footer { background-color: #1A1C23; color: #8C8A80; text-align: center; padding: 40px 20px; font-size: 0.85rem; }
+        
+        footer { background-color: #1A1C23; color: #8C8A80; text-align: center; padding: 40px 20px; font-size: 0.85rem; border-top: 1px solid #EFEFE9; }
         footer a { color: #FFF; text-decoration: none; margin-left: 15px; }
-        @media (max-width: 600px) { header h1 { font-size: 2.1rem; } h2 { font-size: 1.6rem; } .price-table th, .price-table td { padding: 14px 15px; } .text-block, .announcement-card, .cta-box { padding: 30px 20px; } .phone-display { font-size: 1.6rem; } .btn { width: 100%; text-align: center; } }
+        @media (max-width: 600px) { header h1 { font-size: 2.1rem; } h2 { font-size: 1.7rem; } .text-block, .cta-box { padding: 30px 20px; } .phone-display { font-size: 1.6rem; } .btn { width: 100%; text-align: center; } }
     </style>
 </head>
 <body>
 
+    <!-- 1 БЛОК: КТО Я / ОБО МНЕ + КОНТАКТЫ + ФОТО НА САМОМ ВЕРХУ -->
     <header>
         <div class="profile-container">
             <img src="avatar.jpeg" alt="Ирина Романова" class="profile-img" onerror="this.src='avatar.jpg'; this.onerror=function(){this.style.display='none';}">
         </div>
         <h1>Ирина Романова</h1>
-        <p>Сертифицированный практик и фасилитатор системы Access Consciousness</p>
+        <p class="subtitle">Сертифицированный практик и фасилитатор международной системы Access Consciousness</p>
+        <div class="header-contacts">
+            📞 Телефон: <strong>+372 5683 5170</strong> | 
+            📸 Instagram: <a href="https://instagram.com" target="_blank">@irina_romanov</a> | 
+            💬 <a href="https://wa.me" target="_blank">Написать в WhatsApp</a>
+        </div>
     </header>
 
     <div class="container">
 
-        <!-- Ближайший класс -->
-        <section id="upcoming">
-            <div class="announcement-card">
-                <h3>Ближайший тренинг по Access Bars в Таллинне</h3>
-                <p>Погрузитесь в практику осознанности и получите международный диплом за 1 день.</p>
-                <div class="event-details">
-                    🗓 Дата: <strong>13 сентября 2026</strong><br>
-                    ⏰ Время: <strong>10:00 - 17:00</strong><br>
-                    📍 Место: <strong>Parda 3, Tallinn (4. korrus)</strong>
+        <!-- ОБЩЕЕ ПРИВЕТСТВИЕ -->
+        <section id="intro">
+            <div class="text-block">
+                <p>Приветствую вас! Я помогаю людям снимать внутренние ограничения, убирать ментальный шум и открывать новые возможности во всех сферах жизни. Моя цель — показать вам, сколько легкости, свободы и чистой радости может быть в вашей повседневной реальности.</p>
+            </div>
+        </section>
+
+        <!-- 2 БЛОК: ТРЕНИНГ ACCESS BARS 13 СЕНТЯБРЯ -->
+        <section id="training-bars">
+            <h2>Тренинг Access Bars</h2>
+            <div class="text-block" style="position: relative; border-top: 3px solid #D4AF37;">
+                <div class="event-badge">
+                    🗓 Дата проведения: <strong>13 сентября 2026 года</strong><br>
+                    ⏰ Длительность: <strong>7 часов (10:00 - 17:00)</strong><br>
+                    📍 Место проведения: <strong>Parda 3, Таллинн (4 этаж)</strong>
                 </div>
-                <a href="https://wa.me" class="btn" target="_blank">Зарегистрироваться</a>
+                
+                <h3>О чем этот тренинг?</h3>
+                <p style="margin-top: 10px;">Это сертифицированный однодневный интенсив, на котором вы с нуля освоите международную методику работы с 32 энергетическими точками на голове. Тренинг на 100% практический: вы дважды получите сессию Баров и дважды сделаете её самостоятельно под моим руководством.</p>
+                <p>Вы получите официальное международное руководство, схемы точек и именной **международный диплом практика**, дающий право официально проводить сессии в 170 странах мира — как для близких, так и платно для клиентов.</p>
+                
+                <div class="price-tag">
+                    Стоимость участия: <span>€380</span><br>
+                    Повторное участие: <span>€190</span>
+                </div>
+                
+                <div style="text-align: center;">
+                    <a href="https://wa.me" class="btn" target="_blank">Зарегистрироваться на тренинг</a>
+                </div>
+
                 <div class="map-container">
                     <iframe src="https://google.com" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
 
-        <!-- О СИСТЕМЕ ACCESS CONSCIOUSNESS -->
-        <section id="about-modality">
-            <h2>О модальности Access Consciousness</h2>
+        <!-- 3 БЛОК: ИНДИВИДУАЛЬНЫЕ КОНСУЛЬТАЦИИ И СЕССИИ -->
+        <section id="sessions">
+            <h2>Индивидуальные сессии</h2>
             <div class="text-block">
-                <p><strong>Access Consciousness («Доступ к Осознанности»)</strong> — это международная динамическая система практических инструментов, телесных процессов и вербальных техник. Главная цель этой модальности — расширить возможности человека, помочь ему пробудить свою истинную силу, убрать ментальный шум и начать создавать жизнь из легкости, радости и великолепия.</p>
-                <p>В отличие от классических подходов, которые ищут фиксированные ответы, Access использует вопросы как инструмент расширения реальности. Вопросы вроде <em>«Что еще здесь возможно?»</em> открывают новые энергетические возможности, которые логический ум раньше просто не замечал. Модальность не навязывает вам чужие правила, её главный девиз: <strong>«Расширение возможностей людей знать то, что они знают»</strong>.</p>
-                <p>Официальный международный источник информации: <a href="https://accessconsciousness.com" class="external-link" target="_blank">Access Consciousness Website</a>.</p>
+                <h3>Энергетическая сессия «Relax and Receive»</h3>
+                <p style="margin-top: 10px;">Часовая глубокая индивидуальная работа, полностью адаптированная под ваш личный запрос (деньги, здоровье, отношения, карьера или выход из кризиса). Комбинация телесных процессов и вербальной фасилитации позволяет точечно распутать узлы ограничений в вашем теле и сознании.</p>
+                <p>Вы разгружаете нервную систему, избавляетесь от многолетнего стресса и выходите из кабинета с кристально чистым умом, чувством тотального облегчения и готовыми инсайтами.</p>
+                
+                <div class="price-tag">
+                    Длительность: <strong>1 час</strong><br>
+                    Стоимость сессии: <span>€75</span>
+                </div>
+                
+                <div style="text-align: center;">
+                    <a href="https://wa.me" class="btn" target="_blank">Записаться на сессию</a>
+                </div>
             </div>
         </section>
 
-        <!-- ЧТО ТАКОЕ ACCESS BARS -->
-        <section id="what-is-bars">
-            <h2>Что такое Access Bars?</h2>
+        <!-- 4 БЛОК: ЧТО ТАКОЕ ACCESS CONSCIOUSNESS -->
+        <section id="about-ac">
+            <h2>Что такое Access Consciousness?</h2>
             <div class="text-block">
-                <p><strong>Access Bars® (Аксесс Бары)</strong> — это международная методика глубокого расслабления и очищения ума, которая позволяет избавиться от многолетнего ментального груза, стресса и ограничивающих установок всего за одну сессию. На нашей голове расположены <strong>32 уникальные точки (бары)</strong>, каждая из которых напрямую связана с определенной сферой человеческой жизни: деньгами, контролем, творчеством, телом, радостью, покоем, коммуникацией и надеждами.</p>
-                <p>Во время сессии вы лежите на кушетке и расслабляетесь, пока практик мягко, без давления прикасается к этим 32 точкам на вашей голове. В этот момент запускается процесс разрядки электромагнитного напряжения, накопленного в коре головного мозга в результате ваших мыслей, страхов, обид и чужих убеждений.</p>
-                <p><strong>Это работает в точности как очистка жесткого диска вашего компьютера:</strong> сессия Баров стирает застарелые, ненужные, «зависающие» программы и спам, которые годами блокировали ваше развитие и заставляли вас ходить по кругу. Вы освобождаете колоссальное пространство внутри себя для того, чтобы начать создавать свою реальность из легкости, осознанности и радости.</p>
-                <p><strong>Что вы получаете после сессии Access Bars:</strong></p>
-                <ul>
-                    <li>✦ Полное избавление от ментального шума, тревожности и синдрома «словомешалки»;</li>
-                    <li>✦ Глубокий, спокойный и по-настоящему восстанавливающий сон;</li>
-                    <li>✦ Снижение уровня повседневного стресса, панических атак и страхов до минимума;</li>
-                    <li>✦ Ясность ума, фокус и способность видеть новые возможности и легкие решения;</li>
-                    <li>✦ Разрушение блоков и выход из замкнутого круга повторяющихся проблем.</li>
-                </ul>
+                <p><strong>Access Consciousness («Доступ к Осознанности»)</strong> — это всемирная динамическая система практических инструментов, телесных процессов и вербальных техник. Её главная цель — расширить возможности человека, помочь ему убрать ментальный шум, вернуть веру в себя и начать создавать жизнь из легкости, радости и великолепия.</p>
+                <p>В отличие от классических подходов, которые ищут фиксированные ответы и копаются в причинах проблем, Access использует силу открытых вопросов. Вопросы вроде <em>«Что еще здесь возможно?»</em> или <em>«Как может быть еще лучше?»</em> мгновенно обходят логические барьеры ума и открывают новые энергетические возможности, которые вы раньше просто не замечали.</p>
