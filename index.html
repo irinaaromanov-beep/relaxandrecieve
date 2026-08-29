@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ирина Романова | Фасилитатор Access Consciousness Таллинн</title>
     
+    <!-- Подключаем легкий элегантный шрифт -->
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     
     <style>
+        /* Светлый премиальный минимализм */
         * {
             margin: 0;
             padding: 0;
@@ -24,6 +26,7 @@
             -webkit-font-smoothing: antialiased;
         }
 
+        /* Шапка */
         header {
             background-color: #FFFFFF;
             padding: 90px 20px 60px;
@@ -62,6 +65,7 @@
             margin: 0 auto;
         }
 
+        /* Контейнер */
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -90,6 +94,7 @@
             margin: 15px auto 0;
         }
 
+        /* Карточка тренинга */
         .announcement-card {
             background-color: #FFFFFF;
             border: 1px solid #EAE8E1;
@@ -134,6 +139,7 @@
             color: #1A1C23;
         }
 
+        /* Карта Таллина */
         .map-container {
             margin-top: 35px;
             border-radius: 6px;
@@ -149,6 +155,7 @@
             display: block;
         }
 
+        /* Описание системы */
         .system-intro {
             background-color: #FFFFFF;
             border: 1px solid #EAE8E1;
@@ -158,6 +165,7 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.01);
         }
 
+        /* Блоки направлений */
         .modality-block {
             background: #FFFFFF;
             padding: 40px;
@@ -192,6 +200,7 @@
             border-bottom-color: #D4AF37;
         }
 
+        /* Таблица цен */
         .price-table {
             width: 100%;
             border-collapse: collapse;
@@ -230,6 +239,7 @@
             color: #1A1C23;
         }
 
+        /* Красивые светлые кнопки */
         .btn {
             display: inline-block;
             background-color: #1A1C23;
@@ -264,6 +274,7 @@
             border-bottom-color: #1A1C23;
         }
 
+        /* Блок контактов */
         .cta-box {
             text-align: center;
             background: #FFFFFF;
@@ -292,6 +303,7 @@
             font-weight: 500;
         }
 
+        /* Подвал */
         footer {
             background-color: #1A1C23;
             color: #8C8A80;
@@ -320,7 +332,7 @@
 
     <header>
         <div class="profile-container">
-            <img src="avatar.jpeg" alt="Ирина Романова" class="profile-img" onerror="this.style.display='none'">
+            <img src="avatar.jpg" alt="Ирина Романова" class="profile-img" onerror="this.src='avatar.jpeg'; this.onerror=function(){this.style.display='none';}">
         </div>
         <h1>Ирина Романова</h1>
         <p>Сертифицированный практик и фасилитатор системы Access Consciousness</p>
@@ -328,6 +340,7 @@
 
     <div class="container">
 
+        <!-- Ближайший класс -->
         <section id="upcoming">
             <div class="announcement-card">
                 <h3>Ближайший тренинг по Access Bars в Таллинне</h3>
@@ -340,9 +353,3 @@
                 <a href="https://wa.me" class="btn" target="_blank">Зарегистрироваться</a>
                 
                 <div class="map-container">
-                    <iframe src="https://google.com" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </section>
-
-        <section id="about-system">
