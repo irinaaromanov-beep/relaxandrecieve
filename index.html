@@ -4,49 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ирина Романова | Фасилитатор Access Consciousness Таллинн</title>
-    
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { color: #2D3142; line-height: 1.8; font-family: 'Plus Jakarta Sans', sans-serif; background-color: #FAF9F5; -webkit-font-smoothing: antialiased; }
-        
         header { background-color: #FFFFFF; padding: 80px 20px 40px; text-align: center; border-bottom: 1px solid #EFEFE9; }
         .profile-container { margin-bottom: 25px; }
         .profile-img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 1px solid #D4AF37; padding: 5px; background-color: #FFF; }
         header h1 { font-family: 'Playfair Display', serif; font-size: 2.8rem; color: #1A1C23; font-weight: 400; letter-spacing: 0.5px; margin-bottom: 10px; }
         header .subtitle { font-size: 1.1rem; color: #8C8A80; font-weight: 300; max-width: 600px; margin: 0 auto 20px; }
-        
         .header-contacts { font-size: 1.05rem; color: #1A1C23; font-weight: 500; margin-top: 15px; }
         .header-contacts a { color: #D4AF37; text-decoration: none; margin: 0 10px; border-bottom: 1px dashed #D4AF37; }
-        
         .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
         section { margin-bottom: 70px; }
-        
         h2 { font-family: 'Playfair Display', serif; font-size: 2.1rem; color: #1A1C23; margin-bottom: 35px; text-align: center; font-weight: 400; }
         h2::after { content: ''; display: block; width: 35px; height: 1px; background-color: #D4AF37; margin: 15px auto 0; }
-        
         .text-block { background-color: #FFFFFF; border: 1px solid #EAE8E1; padding: 40px; border-radius: 8px; box-shadow: 0 10px 30px rgba(26,28,35,0.01); text-align: left; margin-bottom: 25px; }
         .text-block p { margin-bottom: 20px; color: #4A5568; }
         .text-block ul { margin: 20px 0 25px 20px; color: #4A5568; }
         .text-block li { margin-bottom: 10px; }
         .text-block h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: #1A1C23; margin-bottom: 15px; font-weight: 400; }
-        
         .event-badge { display: inline-block; background: #FAF9F5; border-left: 3px solid #D4AF37; padding: 15px 20px; margin-bottom: 20px; border-radius: 0 4px 4px 0; width: 100%; font-size: 1.05rem; }
         .price-tag { font-size: 1.3rem; color: #1A1C23; font-weight: 600; margin: 15px 0; padding: 10px 0; border-top: 1px solid #EAE8E1; border-bottom: 1px solid #EAE8E1; }
         .price-tag span { color: #D4AF37; }
-        
         .map-container { margin-top: 35px; border-radius: 6px; overflow: hidden; border: 1px solid #EAE8E1; }
         .map-container iframe { width: 100%; height: 300px; border: 0; display: block; }
-        
-        .btn { display: inline-block; background-color: #1A1C23; color: #FFFFFF; padding: 15px 40px; text-decoration: none; font-weight: 500; font-size: 0.95rem; letter-spacing: 0.5px; border-radius: 4px; margin-top: 15px; transition: all 0.3s ease; text-transform: uppercase; }
-        .btn:hover { background-color: #D4AF37; transform: translateY(-1px); box-shadow: 0 5px 15px rgba(212,175,55,0.2); }
-        
+        .price-table { width: 100%; border-collapse: collapse; background: #FFFFFF; border: 1px solid #EAE8E1; border-radius: 6px; overflow: hidden; margin-top: 25px; }
+        .price-table th, .price-table td { padding: 18px 25px; text-align: left; }
+        .price-table th { background-color: #FAF9F5; color: #1A1C23; font-family: 'Playfair Display', serif; font-size: 1.15rem; border-bottom: 1px solid #EAE8E1; }
+        .price-table tr { border-bottom: 1px solid #FAF9F5; }
+        .price-table tr:last-child { border-bottom: none; }
+        .price-table td.price { text-align: right; font-weight: 600; color: #1A1C23; }
+        .btn { display: inline-block; background-color: #1A1C23; color: #FFFFFF; padding: 15px 40px; text-decoration: none; font-weight: 500; font-size: 0.95rem; letter-spacing: 0.5px; border-radius: 4px; margin-top: 20px; transition: all 0.3s ease; text-transform: uppercase; }
+        .btn:hover { background-color: #D4AF37; transform: translateY(-1px); }
         .cta-box { text-align: center; background: #FFFFFF; padding: 50px 35px; border-radius: 8px; border: 1px solid #EAE8E1; box-shadow: 0 4px 15px rgba(0,0,0,0.02); }
         .phone-display { font-family: 'Playfair Display', serif; font-size: 2rem; margin: 20px 0 5px; color: #1A1C23; }
-        
+        .instagram-display { font-size: 1rem; margin-bottom: 25px; color: #8C8A80; }
+        .instagram-display a { color: #1A1C23; text-decoration: none; font-weight: 500; }
         footer { background-color: #1A1C23; color: #8C8A80; text-align: center; padding: 40px 20px; font-size: 0.85rem; border-top: 1px solid #EFEFE9; }
         footer a { color: #FFF; text-decoration: none; margin-left: 15px; }
         @media (max-width: 600px) { header h1 { font-size: 2.1rem; } h2 { font-size: 1.7rem; } .text-block, .cta-box { padding: 30px 20px; } .phone-display { font-size: 1.6rem; } .btn { width: 100%; text-align: center; } }
@@ -54,7 +50,7 @@
 </head>
 <body>
 
-    <!-- 1 БЛОК: КТО Я / ОБО МНЕ + КОНТАКТЫ + ФОТО НА САМОМ ВЕРХУ -->
+    <!-- 1 БЛОК: КТО Я / ОБО МНЕ + КОНТАКТЫ + ФОТО -->
     <header>
         <div class="profile-container">
             <img src="avatar.jpeg" alt="Ирина Романова" class="profile-img" onerror="this.src='avatar.jpg'; this.onerror=function(){this.style.display='none';}">
@@ -105,8 +101,7 @@
                 </div>
             </div>
         </section>
-
-        <!-- 3 БЛОК: ИНДИВИДУАЛЬНЫЕ КОНСУЛЬТАЦИИ И СЕССИИ -->
+                <!-- 3 БЛОК: ИНДИВИДУАЛЬНЫЕ КОНСУЛЬТАЦИИ И СЕССИИ -->
         <section id="sessions">
             <h2>Индивидуальные сессии</h2>
             <div class="text-block">
@@ -127,7 +122,74 @@
 
         <!-- 4 БЛОК: ЧТО ТАКОЕ ACCESS CONSCIOUSNESS -->
         <section id="about-ac">
-            <h2>Что такое Access Consciousness?</h2>
+            <h2>What is Access Consciousness?</h2>
             <div class="text-block">
                 <p><strong>Access Consciousness («Доступ к Осознанности»)</strong> — это всемирная динамическая система практических инструментов, телесных процессов и вербальных техник. Её главная цель — расширить возможности человека, помочь ему убрать ментальный шум, вернуть веру в себя и начать создавать жизнь из легкости, радости и великолепия.</p>
                 <p>В отличие от классических подходов, которые ищут фиксированные ответы и копаются в причинах проблем, Access использует силу открытых вопросов. Вопросы вроде <em>«Что еще здесь возможно?»</em> или <em>«Как может быть еще лучше?»</em> мгновенно обходят логические барьеры ума и открывают новые энергетические возможности, которые вы раньше просто не замечали.</p>
+                <p>Эта модальность не навязывает вам чужие правила. Её главный девиз: <strong>«Расширение возможностей людей знать то, что они знают»</strong>. Узнать больше можно на официальном сайте: <a href="https://accessconsciousness.com" class="external-link" target="_blank" style="color:#D4AF37; text-decoration: none; border-bottom: 1px solid rgba(212, 175, 55, 0.4);">Access Consciousness Website</a>.</p>
+            </div>
+        </section>
+
+        <!-- 5 БЛОК: ЧТО ТАКОЕ ACCESS BARS -->
+        <section id="about-bars">
+            <h2>What is Access Bars?</h2>
+            <div class="text-block">
+                <p><strong>Access Bars® (Аксесс Бары)</strong> — это международная методика глубокого расслабления и очищения ума, которая позволяет избавиться от многолетнего ментального груза, стресса и ограничивающих установок всего за одну сессию. На нашей голове расположены <strong>32 уникальные точки (бары)</strong>, каждая из которых напрямую связана с определенной сферой человеческой жизни: деньгами, контролем, творчеством, телом, радостью, покоем, коммуникацией и надеждами.</p>
+                <p>Во время сессии вы лежите на кушетке и расслабляетесь, пока практик мягко, без давления прикасается к этим 32 точкам на вашей голове. В этот момент запускается процесс разрядки электромагнитного напряжения, накопленного в коре головного мозга в результате ваших мыслей, страхов, обид и чужих убеждений.</p>
+                <p><strong>Это работает в точности как очистка жесткого диска вашего компьютера:</strong> сессия Баров стирает застарелые, ненужные, «зависающие» программы и спам, которые годами блокировали ваше развитие и заставляли вас ходить по кругу. Вы освобождаете колоссальное пространство внутри себя для того, чтобы начать создавать свою реальность из легкости, осознанности и радости.</p>
+                <ul>
+                    <li>✦ Полное избавление от ментального шума, тревожности и синдрома «словомешалки»;</li>
+                    <li>✦ Глубокий, спокойный и по-настоящему восстанавливающий сон;</li>
+                    <li>✦ Снижение уровня повседневного стресса, панических атак и страхов до минимума;</li>
+                    <li>✦ Ясность ума, фокус и способность видеть новые возможности и легкие решения;</li>
+                    <li>✦ Разрушение блоков и выход из замкнутого круга повторяющихся проблем.</li>
+                </ul>
+                <p style="margin-top: 20px; font-style: italic; border-left: 2px solid #D4AF37; padding-left: 15px;">Как говорят основатели методики: «В самом худшем случае после сессии вы почувствуете, что вам сделали лучший расслабряющий массаж в вашей жизни. В самом лучшем случае — полностью изменится вся ваша реальность».</p>
+            </div>
+        </section>
+
+        <!-- 6 БЛОК: ЧТО ТАКОЕ ENERGETIC FACELIFT -->
+        <section id="about-facelift">
+            <h2>What is Energetic Facelift?</h2>
+            <div class="text-block">
+                <p><strong>Access Energetic Facelift® (Энергетический Фейслифтинг)</strong> — это мощный, глубокий телесный процесс Access Consciousness, который не просто омолаживает лицо, но и запускает процессы интенсивной регенерации и восстановления клеток всего организма.</p>
+                <p>Этот метод кардинально отличается от привычных бьюти-процедур. Здесь не используются уколы, химические пилинги, кремы или инвазивная аппаратура. Всё преображение происходит исключительно за счет бережного взаимодействия с естественными энергетическими потоками вашего тела.</p>
+                
+                <h3>✦ Как это работает?</h3>
+                <p style="margin-top: 10px;">Во время сессии вы отдыхаете, лежа на кушетке. Практик использует мягкие, нежные и питательные прикосновения ладоней, двигаясь снизу вверх от зоны декольте и шеи к лицу и голове.</p>
+                <p>В этот момент активируются более 30 уникальных космических и земных энергий, которые запускают клеточную память вашего тела. Главный секрет старения — это наши суждения о нем. Каждый раз, когда мы смотрим в зеркало и думаем: «Я старею, здесь появились морщины, кожа увядает», клетки нашего тела послушно «запечатывают» эти мысли в физическую реальность.</p>
+                <p>Energetic Facelift бережно стирает из памяти клеток все ваши и чужие суждения о возрасте, старении, внешности, генетике и болезнях. Клетки расслабляются, возвращаются в свое первозданное, здоровое состояние и начинают функционировать так же активно, как в юности.</p>
+                
+                <h3>💫 Что вы получаете после сессии Энергетического Фейслифтинга?</h3>
+                <ul>
+                    <li>✦ <strong>Естественный лифтинг-эффект:</strong> подтягивается овал лица, кожа становится более упругой, плотной, увлажненной и сияющей изнутри;</li>
+                    <li>✦ <strong>Разглаживание морщин:</strong> уменьшается глубина мимических и возрастных морщин, уходят отеки, пигментация и следы усталости под глазами;</li>
+                    <li>✦ <strong>Клеточное восстановление:</strong> запускаются внутренние процессы омоложения и исцеления не только лица, но и внутренних органов и систем;</li>
+                    <li>✦ <strong>Освобождение от критики:</strong> вы перестаете судить свою внешность, уходит внутреннее непринятие себя, появляется глубокая любовь и благодарность к своему телу;</li>
+                    <li>✦ <strong>Колоссальный прилив сил:</strong> сессия дарит состояние глубокого покоя, стирает хроническую усталость и наполняет тело невероятной бодростью.</li>
+                </ul>
+                
+                <p style="margin-top: 20px; font-style: italic; border-left: 2px solid #D4AF37; padding-left: 15px;">Замечено, что эффект от сессий является накопительным. Прохождение курса из 20 сессий способно зафиксировать этот результат на долгие годы, запускающий необратимые процессы омоложения, которые видны всем окружающим.</p>
+            </div>
+        </section>
+
+        <!-- ФИНАЛЬНЫЙ БЛОК ЗАПИСИ -->
+        <section id="final-contact">
+            <div class="cta-box">
+                <h2>Готовы выбрать большее для себя?</h2>
+                <p>Свяжитесь со мной напрямую, чтобы задать вопрос, записаться на сессию или забронировать место на тренинг.</p>
+                <div class="phone-display">+372 5683 5170</div>
+                <div class="instagram-display">Instagram: <a href="https://instagram.com" target="_blank">@irina_romanov</a></div>
+                <a href="https://wa.me" class="btn" target="_blank">Написать в WhatsApp</a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Ирина Романова. Все права защищены. <a href="https://instagram.com" target="_blank">Instagram Profile</a></p>
+    </footer>
+
+</body>
+</html>
+
