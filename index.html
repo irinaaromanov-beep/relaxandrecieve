@@ -4,335 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ирина Романова | Фасилитатор Access Consciousness Таллинн</title>
-    
-    <!-- Подключаем легкий элегантный шрифт -->
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-    
     <style>
-        /* Светлый премиальный минимализм */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            color: #2D3142;
-            line-height: 1.8;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #FAF9F5;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        /* Шапка */
-        header {
-            background-color: #FFFFFF;
-            padding: 90px 20px 60px;
-            text-align: center;
-            border-bottom: 1px solid #EFEFE9;
-        }
-
-        .profile-container {
-            margin-bottom: 25px;
-        }
-
-        .profile-img {
-            width: 145px;
-            height: 145px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 1px solid #D4AF37;
-            padding: 5px;
-            background-color: #FFF;
-        }
-
-        header h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.6rem;
-            color: #1A1C23;
-            font-weight: 400;
-            letter-spacing: 0.5px;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 1.05rem;
-            color: #8C8A80;
-            font-weight: 300;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* Контейнер */
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        section {
-            margin-bottom: 80px;
-        }
-
-        h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            color: #1A1C23;
-            margin-bottom: 40px;
-            text-align: center;
-            font-weight: 400;
-        }
-
-        h2::after {
-            content: '';
-            display: block;
-            width: 35px;
-            height: 1px;
-            background-color: #D4AF37;
-            margin: 15px auto 0;
-        }
-
-        /* Карточка тренинга */
-        .announcement-card {
-            background-color: #FFFFFF;
-            border: 1px solid #EAE8E1;
-            padding: 45px 35px;
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(26,28,35,0.02);
-            position: relative;
-        }
-
-        .announcement-card::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0;
-            height: 3px;
-            background-color: #D4AF37;
-            border-radius: 8px 8px 0 0;
-        }
-
-        .announcement-card h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            color: #1A1C23;
-            margin-bottom: 15px;
-            font-weight: 400;
-        }
-
-        .event-details {
-            font-size: 1.1rem;
-            color: #2D3142;
-            background: #FAF9F5;
-            border-left: 3px solid #D4AF37;
-            padding: 18px;
-            border-radius: 4px;
-            max-width: 500px;
-            margin: 25px auto;
-            text-align: left;
-            line-height: 1.8;
-        }
-
-        .event-details strong {
-            color: #1A1C23;
-        }
-
-        /* Карта Таллина */
-        .map-container {
-            margin-top: 35px;
-            border-radius: 6px;
-            overflow: hidden;
-            border: 1px solid #EAE8E1;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
-        }
-
-        .map-container iframe {
-            width: 100%;
-            height: 320px;
-            border: 0;
-            display: block;
-        }
-
-        /* Описание системы */
-        .system-intro {
-            background-color: #FFFFFF;
-            border: 1px solid #EAE8E1;
-            padding: 35px;
-            border-radius: 6px;
-            color: #5C5E66;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.01);
-        }
-
-        /* Блоки направлений */
-        .modality-block {
-            background: #FFFFFF;
-            padding: 40px;
-            border-radius: 6px;
-            border: 1px solid #EAE8E1;
-            margin-bottom: 25px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.01);
-        }
-
-        .modality-block h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.4rem;
-            color: #1A1C23;
-            margin-bottom: 12px;
-            font-weight: 400;
-        }
-
-        .modality-block p {
-            color: #5C5E66;
-            margin-bottom: 20px;
-        }
-
-        .external-link {
-            color: #D4AF37;
-            text-decoration: none;
-            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
-            transition: all 0.2s;
-            font-weight: 500;
-        }
-
-        .external-link:hover {
-            border-bottom-color: #D4AF37;
-        }
-
-        /* Таблица цен */
-        .price-table {
-            width: 100%;
-            border-collapse: collapse;
-            background: #FFFFFF;
-            border: 1px solid #EAE8E1;
-            border-radius: 6px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.01);
-        }
-
-        .price-table th, .price-table td {
-            padding: 18px 25px;
-            text-align: left;
-        }
-
-        .price-table th {
-            background-color: #FAF9F5;
-            color: #1A1C23;
-            font-family: 'Playfair Display', serif;
-            font-size: 1.15rem;
-            font-weight: 400;
-            border-bottom: 1px solid #EAE8E1;
-        }
-
-        .price-table tr {
-            border-bottom: 1px solid #FAF9F5;
-        }
-
-        .price-table tr:last-child {
-            border-bottom: none;
-        }
-
-        .price-table td.price {
-            text-align: right;
-            font-weight: 600;
-            color: #1A1C23;
-        }
-
-        /* Красивые светлые кнопки */
-        .btn {
-            display: inline-block;
-            background-color: #1A1C23;
-            color: #FFFFFF;
-            padding: 15px 40px;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
-            letter-spacing: 0.5px;
-            border-radius: 4px;
-            margin-top: 15px;
-            transition: all 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #D4AF37;
-            transform: translateY(-1px);
-        }
-
-        .btn-secondary {
-            display: inline-block;
-            color: #D4AF37;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.9rem;
-            border-bottom: 1px solid rgba(212, 175, 55, 0.4);
-            transition: all 0.2s;
-        }
-
-        .btn-secondary:hover {
-            color: #1A1C23;
-            border-bottom-color: #1A1C23;
-        }
-
-        /* Блок контактов */
-        .cta-box {
-            text-align: center;
-            background: #FFFFFF;
-            padding: 50px 35px;
-            border-radius: 8px;
-            border: 1px solid #EAE8E1;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
-        }
-
-        .phone-display {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            margin: 20px 0 5px;
-            color: #1A1C23;
-        }
-
-        .instagram-display {
-            font-size: 1rem;
-            margin-bottom: 25px;
-            color: #8C8A80;
-        }
-
-        .instagram-display a {
-            color: #1A1C23;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        /* Подвал */
-        footer {
-            background-color: #1A1C23;
-            color: #8C8A80;
-            text-align: center;
-            padding: 40px 20px;
-            font-size: 0.85rem;
-        }
-
-        footer a {
-            color: #FFF;
-            text-decoration: none;
-            margin-left: 15px;
-        }
-
-        @media (max-width: 600px) {
-            header h1 { font-size: 2.1rem; }
-            h2 { font-size: 1.6rem; }
-            .price-table th, .price-table td { padding: 14px 15px; }
-            .modality-block, .announcement-card, .cta-box { padding: 30px 20px; }
-            .phone-display { font-size: 1.6rem; }
-            .btn { width: 100%; text-align: center; }
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { color: #2D3142; line-height: 1.8; font-family: 'Plus Jakarta Sans', sans-serif; background-color: #FAF9F5; -webkit-font-smoothing: antialiased; }
+        header { background-color: #FFFFFF; padding: 90px 20px 60px; text-align: center; border-bottom: 1px solid #EFEFE9; }
+        .profile-container { margin-bottom: 25px; }
+        .profile-img { width: 145px; height: 145px; border-radius: 50%; object-fit: cover; border: 1px solid #D4AF37; padding: 5px; background-color: #FFF; }
+        header h1 { font-family: 'Playfair Display', serif; font-size: 2.6rem; color: #1A1C23; font-weight: 400; letter-spacing: 0.5px; margin-bottom: 10px; }
+        header p { font-size: 1.05rem; color: #8C8A80; font-weight: 300; max-width: 600px; margin: 0 auto; }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        section { margin-bottom: 80px; }
+        h2 { font-family: 'Playfair Display', serif; font-size: 2rem; color: #1A1C23; margin-bottom: 35px; text-align: center; font-weight: 400; }
+        h2::after { content: ''; display: block; width: 35px; height: 1px; background-color: #D4AF37; margin: 15px auto 0; }
+        .announcement-card { background-color: #FFFFFF; border: 1px solid #EAE8E1; padding: 45px 35px; border-radius: 8px; text-align: center; box-shadow: 0 10px 30px rgba(26,28,35,0.02); position: relative; }
+        .announcement-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background-color: #D4AF37; border-radius: 8px 8px 0 0; }
+        .announcement-card h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: #1A1C23; margin-bottom: 15px; }
+        .event-details { font-size: 1.1rem; color: #2D3142; background: #FAF9F5; border-left: 3px solid #D4AF37; padding: 18px; border-radius: 4px; max-width: 500px; margin: 25px auto; text-align: left; }
+        .map-container { margin-top: 35px; border-radius: 6px; overflow: hidden; border: 1px solid #EAE8E1; }
+        .map-container iframe { width: 100%; height: 320px; border: 0; display: block; }
+        .text-block { background-color: #FFFFFF; border: 1px solid #EAE8E1; padding: 40px; border-radius: 6px; box-shadow: 0 4px 15px rgba(0,0,0,0.01); text-align: left; margin-bottom: 30px; }
+        .text-block p { margin-bottom: 20px; color: #4A5568; }
+        .text-block ul { margin: 20px 0 25px 20px; color: #4A5568; }
+        .text-block li { margin-bottom: 10px; }
+        .price-table { width: 100%; border-collapse: collapse; background: #FFFFFF; border: 1px solid #EAE8E1; border-radius: 6px; overflow: hidden; }
+        .price-table th, .price-table td { padding: 18px 25px; text-align: left; }
+        .price-table th { background-color: #FAF9F5; color: #1A1C23; font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 400; border-bottom: 1px solid #EAE8E1; }
+        .price-table tr { border-bottom: 1px solid #FAF9F5; }
+        .price-table tr:last-child { border-bottom: none; }
+        .price-table td.price { text-align: right; font-weight: 600; color: #1A1C23; }
+        .btn { display: inline-block; background-color: #1A1C23; color: #FFFFFF; padding: 15px 40px; text-decoration: none; font-weight: 500; font-size: 0.95rem; letter-spacing: 0.5px; border-radius: 4px; margin-top: 15px; transition: all 0.3s; }
+        .btn:hover { background-color: #D4AF37; transform: translateY(-1px); }
+        .btn-secondary { display: inline-block; color: #D4AF37; text-decoration: none; font-weight: 500; font-size: 0.9rem; border-bottom: 1px solid rgba(212, 175, 55, 0.4); margin-top: 10px; }
+        .cta-box { text-align: center; background: #FFFFFF; padding: 50px 35px; border-radius: 8px; border: 1px solid #EAE8E1; }
+        .phone-display { font-family: 'Playfair Display', serif; font-size: 2rem; margin: 20px 0 5px; color: #1A1C23; }
+        .instagram-display { font-size: 1rem; margin-bottom: 25px; color: #8C8A80; }
+        .instagram-display a { color: #1A1C23; text-decoration: none; font-weight: 500; }
+        footer { background-color: #1A1C23; color: #8C8A80; text-align: center; padding: 40px 20px; font-size: 0.85rem; }
+        footer a { color: #FFF; text-decoration: none; margin-left: 15px; }
+        @media (max-width: 600px) { header h1 { font-size: 2.1rem; } h2 { font-size: 1.6rem; } .price-table th, .price-table td { padding: 14px 15px; } .text-block, .announcement-card, .cta-box { padding: 30px 20px; } .phone-display { font-size: 1.6rem; } .btn { width: 100%; text-align: center; } }
     </style>
 </head>
 <body>
 
     <header>
         <div class="profile-container">
-            <img src="avatar.jpg" alt="Ирина Романова" class="profile-img" onerror="this.src='avatar.jpeg'; this.onerror=function(){this.style.display='none';}">
+            <img src="avatar.jpeg" alt="Ирина Романова" class="profile-img" onerror="this.src='avatar.jpg'; this.onerror=function(){this.style.display='none';}">
         </div>
         <h1>Ирина Романова</h1>
         <p>Сертифицированный практик и фасилитатор системы Access Consciousness</p>
@@ -351,5 +70,34 @@
                     📍 Место: <strong>Parda 3, Tallinn (4. korrus)</strong>
                 </div>
                 <a href="https://wa.me" class="btn" target="_blank">Зарегистрироваться</a>
-                
                 <div class="map-container">
+                    <iframe src="https://google.com" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- О СИСТЕМЕ ACCESS CONSCIOUSNESS -->
+        <section id="about-modality">
+            <h2>О модальности Access Consciousness</h2>
+            <div class="text-block">
+                <p><strong>Access Consciousness («Доступ к Осознанности»)</strong> — это международная динамическая система практических инструментов, телесных процессов и вербальных техник. Главная цель этой модальности — расширить возможности человека, помочь ему пробудить свою истинную силу, убрать ментальный шум и начать создавать жизнь из легкости, радости и великолепия.</p>
+                <p>В отличие от классических подходов, которые ищут фиксированные ответы, Access использует вопросы как инструмент расширения реальности. Вопросы вроде <em>«Что еще здесь возможно?»</em> открывают новые энергетические возможности, которые логический ум раньше просто не замечал. Модальность не навязывает вам чужие правила, её главный девиз: <strong>«Расширение возможностей людей знать то, что они знают»</strong>.</p>
+                <p>Официальный международный источник информации: <a href="https://accessconsciousness.com" class="external-link" target="_blank">Access Consciousness Website</a>.</p>
+            </div>
+        </section>
+
+        <!-- ЧТО ТАКОЕ ACCESS BARS -->
+        <section id="what-is-bars">
+            <h2>Что такое Access Bars?</h2>
+            <div class="text-block">
+                <p><strong>Access Bars® (Аксесс Бары)</strong> — это международная методика глубокого расслабления и очищения ума, которая позволяет избавиться от многолетнего ментального груза, стресса и ограничивающих установок всего за одну сессию. На нашей голове расположены <strong>32 уникальные точки (бары)</strong>, каждая из которых напрямую связана с определенной сферой человеческой жизни: деньгами, контролем, творчеством, телом, радостью, покоем, коммуникацией и надеждами.</p>
+                <p>Во время сессии вы лежите на кушетке и расслабляетесь, пока практик мягко, без давления прикасается к этим 32 точкам на вашей голове. В этот момент запускается процесс разрядки электромагнитного напряжения, накопленного в коре головного мозга в результате ваших мыслей, страхов, обид и чужих убеждений.</p>
+                <p><strong>Это работает в точности как очистка жесткого диска вашего компьютера:</strong> сессия Баров стирает застарелые, ненужные, «зависающие» программы и спам, которые годами блокировали ваше развитие и заставляли вас ходить по кругу. Вы освобождаете колоссальное пространство внутри себя для того, чтобы начать создавать свою реальность из легкости, осознанности и радости.</p>
+                <p><strong>Что вы получаете после сессии Access Bars:</strong></p>
+                <ul>
+                    <li>✦ Полное избавление от ментального шума, тревожности и синдрома «словомешалки»;</li>
+                    <li>✦ Глубокий, спокойный и по-настоящему восстанавливающий сон;</li>
+                    <li>✦ Снижение уровня повседневного стресса, панических атак и страхов до минимума;</li>
+                    <li>✦ Ясность ума, фокус и способность видеть новые возможности и легкие решения;</li>
+                    <li>✦ Разрушение блоков и выход из замкнутого круга повторяющихся проблем.</li>
+                </ul>
