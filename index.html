@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ирина Романова | Фасилитатор Access Consciousness в Таллинне</title>
+    <style>
+        /* Общие стили и обнуление */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            color: #333;
+            line-height: 1.6;
+            background-color: #fcfbfa;
+        }
+
+        /* Шапка сайта */
+        header {
+            background: linear-gradient(135deg, #74ebd5, #9face6);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .profile-container {
+            margin-bottom: 20px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+
+        /* Основной контейнер */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Секции */
+        section {
+            margin-bottom: 70px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #2d3748;
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: #9face6;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        /* Блок Расписания / Анонс */
+        .announcement-card {
+            background: linear-gradient(135deg, #fffcf3, #fff8e7);
+            border: 2px dashed #9face6;
+            padding: 40px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+        }
+
+        .announcement-card h3 {
+            font-size: 1.6rem;
+            color: #2d3748;
+            margin-bottom: 15px;
+        }
+
+        .event-details {
+            font-size: 1.2rem;
+            color: #4a5568;
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+
+        .event-details strong {
+            color: #e53e3e;
+        }
+
+        /* Контейнер для карты */
+        .map-container {
+            margin-top: 25px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border: 1px solid #edf2f7;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            display: block;
+        }
+
+        /* Модальности / Инструменты */
+        .modality-block {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+            margin-bottom: 30px;
+        }
+
+        .modality-block h3 {
+            font-size: 1.6rem;
+            color: #2d3748;
+            margin-bottom: 15px;
+        }
+
+        .modality-block p {
+            color: #4a5568;
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+
+        /* Текст про Access Consciousness */
+        .system-intro {
+            background-color: #f7fafc;
+            border-left: 4px solid #74ebd5;
+            padding: 30px;
+            border-radius: 0 16px 16px 0;
+            margin-bottom: 40px;
+        }
+
+        .system-intro p {
+            font-size: 1.1rem;
+            color: #4a5568;
+        }
+
+        .external-link {
+            color: #9face6;
+            text-decoration: underline;
+            font-weight: 600;
+        }
+
+        .external-link:hover {
+            color: #74ebd5;
+        }
+
+        /* Таблица Прайс-листа */
+        .price-table {
+            width: 100%;
+            max-width: 650px;
+            margin: 30px auto 0;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .price-table th, .price-table td {
+            padding: 18px 20px;
+            text-align: left;
+        }
+
+        .price-table th {
+            background-color: #9face6;
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .price-table tr {
+            border-bottom: 1px solid #edf2f7;
+        }
+
+        .price-table tr:last-child {
+            border-bottom: none;
+        }
+
+        .price-table td.price {
+            text-align: right;
+            font-weight: bold;
+            color: #2d3748;
+            white-space: nowrap;
+            font-size: 1.1rem;
+        }
+
+        /* Кнопки и блоки контактов */
+        .cta-box {
+            text-align: center;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .phone-display {
+            font-size: 1.4rem;
+            margin-top: 10px;
+            font-weight: 600;
+            color: #2d3748;
+            letter-spacing: 0.5px;
+        }
+
+        .instagram-display {
+            font-size: 1.1rem;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        .instagram-display a {
+            color: #9face6;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .instagram-display a:hover {
+            color: #74ebd5;
+            text-decoration: underline;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #74ebd5, #9face6);
+            color: white;
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-top: 10px;
+            transition: opacity 0.3s;
+            box-shadow: 0 4px 10px rgba(159, 172, 230, 0.4);
+        }
+
+        .btn-secondary {
+            display: inline-block;
+            background: transparent;
+            color: #4a5568;
+            border: 2px solid #9face6;
+            padding: 10px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+            margin-top: 5px;
+        }
+
+        .btn-secondary:hover {
+            background-color: #9face6;
+            color: white;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        /* Подвал */
+        footer {
+            background-color: #2d3748;
+            color: #a0aec0;
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #74ebd5;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 600px) {
+            header h1 { font-size: 2.2rem; }
+            header p { font-size: 1.1rem; }
+            h2 { font-size: 1.6rem; }
+            .price-table th, .price-table td { padding: 14px 15px; }
+            .modality-block { padding: 25px; }
+            .map-container iframe { height: 220px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+        <div class="profile-container">
+            <img src="avatar.jpg" alt="Ирина Романова" class="profile-img" onerror="this.style.display='none'">
+        </div>
+        <h1>Ирина Романова</h1>
+        <p>Сертифицированный практик и фасилитатор Access Consciousness</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Блок Анонса Ближайшего Класса -->
+        <section id="upcoming">
+            <div class="announcement-card">
+                <h3>Ближайшее обучение в Таллинне</h3>
+                <p>Откройте для себя инструмент, который меняет жизни миллионов людей по всему миру.</p>
+                <div class="event-details">
+                    🗓 <strong>13 сентября 2026 года</strong> &nbsp;|&nbsp; ⏰ <strong>10:00 - 17:00</strong><br>
+                    📍 Адрес: <strong>Parda 3, Таллинн (4 этаж)</strong>
+                </div>
+                <p>По окончании класса вы получаете международный сертификат практика Access Bars.</p>
+                <a href="https://wa.me" class="btn" target="_blank">Занять место на тренинге</a>
+                
+                <!-- Интерактивная карта Google Maps -->
+                <div class="map-container">
+                    <iframe src="https://google.com" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- О системе Access Consciousness -->
+        <section id="about-system">
+            <h2>О системе Access Consciousness</h2>
+            <div class="system-intro">
