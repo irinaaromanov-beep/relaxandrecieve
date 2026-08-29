@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ирина Романова | Фасилитатор Access Consciousness Таллинн</title>
-    <!-- Подключаем дорогой дизайнерский шрифт Google Fonts -->
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     
     <style>
-        /* Премиальный стиль Modern Spiritual */
         * {
             margin: 0;
             padding: 0;
@@ -18,18 +16,17 @@
         }
 
         body {
-            color: #E2E8F0; /* Мягкий светлый текст */
+            color: #E2E8F0;
             line-height: 1.8;
-            font-family: 'Montserrat', sans-serif; /* Основной читаемый шрифт */
-            background-color: #12181A; /* Глубокий, магический темный фон */
+            font-family: 'Montserrat', sans-serif;
+            background-color: #12181A;
         }
 
-        /* Главный экран */
         header {
-            background-color: #161F22; /* Чуть контрастнее основного фона */
+            background-color: #161F22;
             padding: 100px 20px 70px;
             text-align: center;
-            border-bottom: 1px solid rgba(212, 175, 55, 0.15); /* Тонкая золотая нить */
+            border-bottom: 1px solid rgba(212, 175, 55, 0.15);
         }
 
         .profile-container {
@@ -41,7 +38,7 @@
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            border: 1px solid #D4AF37; /* Тонкое золото */
+            border: 1px solid #D4AF37;
             padding: 6px;
             background-color: #161F22;
         }
@@ -57,14 +54,13 @@
 
         header p {
             font-size: 1.1rem;
-            color: #C0B7A6; /* Благородный платиновый оттенок */
+            color: #C0B7A6;
             font-weight: 300;
             max-width: 600px;
             margin: 0 auto;
             letter-spacing: 0.5px;
         }
 
-        /* Основной контейнер */
         .container {
             max-width: 850px;
             margin: 0 auto;
@@ -87,7 +83,7 @@
         }
 
         h2::after {
-            content: '✦'; /* Сакральный символ осознанности вместо скучной полоски */
+            content: '✦';
             display: block;
             font-size: 1rem;
             color: #D4AF37;
@@ -96,7 +92,6 @@
             opacity: 0.7;
         }
 
-        /* Блок Анонса Тренинга */
         .announcement-card {
             background-color: #161F22;
             border: 1px solid rgba(212, 175, 55, 0.2);
@@ -129,24 +124,23 @@
         }
 
         .event-details strong {
-            color: #D4AF37; /* Выделение золотом */
+            color: #D4AF37;
             font-weight: 500;
         }
 
-        /* Карта Таллина */
         .map-container {
             margin-top: 40px;
             border-radius: 6px;
             overflow: hidden;
             border: 1px solid rgba(212, 175, 55, 0.15);
-            filter: grayscale(0.4) invert(0.9) hue-rotate(180deg); /* Стильная темная карта под цвет сайта */
+            filter: grayscale(0.4) invert(0.9) hue-rotate(180deg);
             opacity: 0.8;
             transition: opacity 0.3s;
         }
 
         .map-container:hover {
             opacity: 1;
-            filter: none; /* Возвращает обычные цвета при наведении */
+            filter: none;
         }
 
         .map-container iframe {
@@ -156,7 +150,6 @@
             display: block;
         }
 
-        /* Текст про систему */
         .system-intro {
             background-color: #161F22;
             border: 1px solid rgba(255,255,255,0.05);
@@ -166,7 +159,6 @@
             color: #CBCBCB;
         }
 
-        /* Блоки модальностей */
         .modality-block {
             background: #161F22;
             padding: 40px;
@@ -203,7 +195,6 @@
             border-bottom-color: #FFF;
         }
 
-        /* Элегантная Таблица Цен */
         .price-table {
             width: 100%;
             border-collapse: collapse;
@@ -241,10 +232,9 @@
             font-size: 1.1rem;
         }
 
-        /* Премиум кнопки */
         .btn {
             display: inline-block;
-            background-color: #D4AF37; /* Роскошное золото */
+            background-color: #D4AF37;
             color: #12181A;
             padding: 16px 45px;
             text-decoration: none;
@@ -281,7 +271,6 @@
             border-bottom-color: #FFF;
         }
 
-        /* Контакты */
         .cta-box {
             text-align: center;
             background: #161F22;
@@ -314,7 +303,6 @@
             text-decoration: underline;
         }
 
-        /* Подвал */
         footer {
             background-color: #0D1112;
             color: #718096;
@@ -336,7 +324,6 @@
             color: #D4AF37;
         }
 
-        /* Адаптивность для смартфонов */
         @media (max-width: 600px) {
             header { padding: 70px 20px 50px; }
             header h1 { font-size: 2.2rem; }
@@ -350,5 +337,22 @@
 </head>
 <body>
 
-    <!-- Шапка -->
     <header>
+        <div class="profile-container">
+            <!-- Код сразу ищет ваш файл фотографии с правильным расширением JPEG -->
+            <img src="avatar.img" alt="Ирина Романова" class="profile-img" onerror="this.src='avatar.JPEG'; this.onerror=function(){this.style.display='none';}">
+        </div>
+        <h1>Ирина Романова</h1>
+        <p>Сертифицированный практик и фасилитатор системы Access Consciousness</p>
+    </header>
+
+    <div class="container">
+
+        <section id="upcoming">
+            <div class="announcement-card">
+                <h3>Ближайший тренинг по Access Bars в Таллинне</h3>
+                <p>Погрузитесь в практику осознанности и получите международный диплом за 1 день.</p>
+                <div class="event-details">
+                    🗓 Дата: <strong>13 сентября 2026</strong><br>
+                    ⏰ Время: <strong>10:00 - 17:00</strong><br>
+
